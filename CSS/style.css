@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    width: 100%;
+    background: linear-gradient(90deg, #a855eb, #7106af);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 20px;
+    min-height: calc(100vh - 140px); /* 140px = header + footer */
+}
+
+/* Imagem do lado esquerdo */
+.esquerda {
+    background: #f8ebf0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.imagem {
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Coluna do meio com os botões principais */
+.meio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Coluna direita com botão isolado */
+.direita {
+    background: #f8ebf0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 220px;
+}
+
+/* Botões com gradiente */
+button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #a855eb, #7106af);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #a855eb, #7106af);
+}
+
+/* Resultado */
+.resultado {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 14px;
+}

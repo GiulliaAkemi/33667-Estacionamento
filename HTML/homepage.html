@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Estacionamento</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Estacionamento</h1>
+    </header>
+
+    <div class="container">
+        <div class="esquerda">
+            <img src="/33667-estacionamento/Imagens/Estacionamento.jpg" alt="Estacionamento" class="imagem">
+        </div>
+
+        <div class="meio">
+            <button onclick="registrarEntrada()">Registrar entrada</button>
+            <button onclick="registrarSaida()">Registrar saída</button>
+            <button onclick="verificarVeiculo()">Pesquisar veículo</button>
+            <button onclick="cancelarVeiculo()">Cancelar registro</button>
+        </div>
+
+        <div class="direita">
+            <button onclick="carregarVeiculos()">Ver veículos estacionados</button>
+            <div id="resultado" class="resultado"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Estacionamento. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
